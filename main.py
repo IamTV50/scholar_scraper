@@ -4,10 +4,19 @@ import json
 from selenium import webdriver
 from selenium.webdriver import ChromeOptions
 from selenium.webdriver.common.by import By
+import requests
 
 #NAMES_FILE = 'profiles.json'
 NAMES_FILE = 'profiles_test.json' # shorter profiles.json
 ARTICLES_FILE = 'atricles.json'
+
+def formArticleObject(title, articleUrl, releaseYear) -> list:
+	articleObject = {}
+	articleObject['title'] = title
+	articleObject['url'] = articleUrl
+	articleObject['year'] = releaseYear
+
+	return articleObject
 
 def getScholarArticlesLinks(trArticles) -> list:
 	articleLinks = []
@@ -16,12 +25,11 @@ def getScholarArticlesLinks(trArticles) -> list:
 	for el in trArticles:
 		aTag = el.find('a', {'class':aClass})
 
-		articleObject = {}
-		articleObject['title'] = aTag.text
-		articleObject['url'] = 'https://scholar.google.com' + aTag.attrs['href']
-		articleObject['year'] = el.find('span', {'class': 'gsc_a_h gsc_a_hc gs_ibl'}).text
+		tmpTitle = aTag.text
+		tmpUrl = 'https://scholar.google.com' + aTag.attrs['href']
+		tmpYear = el.find('span', {'class': 'gsc_a_h gsc_a_hc gs_ibl'}).text
 
-		articleLinks.append(articleObject)
+		articleLinks.append(formArticleObject(tmpTitle, tmpUrl, tmpYear))
 
 	return articleLinks
 
@@ -68,9 +76,53 @@ def parseScholarPage(profilePageUrl) -> list:
 
 	return getScholarArticlesLinks(trs)
 
+def getResearchGateAtricleLinks(articleCards) -> list:
+	articlesLinks = []
+	aClass = 'nova-legacy-e-link nova-legacy-e-link--color-inherit nova-legacy-e-link--theme-bare'
+	yearLiClass = 'nova-legacy-e-list__item nova-legacy-v-publication-item__meta-data-item'
+
+	for el in articleCards:
+		aTag = el.find('a', {'class': aClass})
+		year = el.find('li', {'class': yearLiClass}).text.split()[1] if el.find('li', {'class': yearLiClass}) else None
+
+		tmpTitle = aTag.text
+		tmpUrl = aTag.attrs['href']
+		tmpYear = year
+
+		articlesLinks.append(formArticleObject(tmpTitle, tmpUrl, tmpYear))
+
+	return articlesLinks
+
 
 def parseResearchGaetProfile(profilePageUrl) -> list:
-	pass
+	researchItemsDivId = 'research-items'
+	publicationCardClass = 'nova-legacy-o-stack__item'
+
+	headers = {
+		"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.9999.99 Safari/537.36"
+	}
+
+	articleLinks = []
+	pageNum = 1
+	while True:
+		if pageNum == 1:
+			response = requests.get(profilePageUrl, headers=headers)
+		else:
+			response = requests.get(profilePageUrl + '/' + str(pageNum), headers=headers)
+
+		research = BeautifulSoup(response.text, 'html.parser')
+		cardsBody = research.find('div', {'id': researchItemsDivId})
+
+		if cardsBody == None:
+			break
+
+		researchCards = cardsBody.find_all('div', {'class': publicationCardClass})
+		articleLinks.extend(getResearchGateAtricleLinks(researchCards))
+
+		pageNum += 1
+		time.sleep(0.5)
+
+	return articleLinks
 
 def main():
 	try:
@@ -81,7 +133,7 @@ def main():
 		print(f'file {NAMES_FILE} not found')
 		exit()
 
-	profilesWithArticles = {}
+	profilesWithArticles = []
 	for researcher in researchers:
 		profileUrl = researcher['profileUrl']
 
@@ -89,20 +141,23 @@ def main():
 			print(f"missing profileUrl for {researcher['fullName']}")
 			continue
 
-		profilesWithArticles['fullName'] = researcher['fullName']
-		profilesWithArticles['profileUrl'] = profileUrl
+		fullProfile = {}
+		fullProfile['fullName'] = researcher['fullName']
+		fullProfile['profileUrl'] = profileUrl
 
 		if profileUrl.startswith('https://scholar.google.com/'):
-			profilesWithArticles['articles'] = parseScholarPage(profileUrl)
+			fullProfile['articles'] = parseScholarPage(profileUrl)
+			time.sleep(5)  # Sleep between each requests to (hopefully) avoid google ip ban...
 		elif profileUrl.startswith('https://www.researchgate.net/'):
-			continue
-			#profilesWithArticles['articles'] = parseResearchGaetProfile(profileUrl)
+			fullProfile['articles'] = parseResearchGaetProfile(profileUrl)
+			time.sleep(2)
 		else:
 			print(f"unsuported profile {researcher['fullName']} ({profileUrl})")
 			print("profile need to be either 'https://scholar.google.com/...' or 'https://www.researchgate.net/...'")
 			print()
 
-		time.sleep(5)  # Sleep between each requests to (hopefully) avoid google ip ban...
+		profilesWithArticles.extend(fullProfile)
+
 
 	with open(ARTICLES_FILE, 'w', encoding='utf-8') as json_file:
 		json.dump(profilesWithArticles, json_file, ensure_ascii=False, indent=4)

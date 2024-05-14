@@ -11,7 +11,7 @@ Program se temu poskuša izognit z uporabo pavze med vsakim zahtevkom.
 **UPORABA SAMO ZA IZOBRAŽEVALNE IN RAZISKOVALNE NAMENE!**
 
 # uporaba
-V datoteko *profiles.json* je potrebno ROČNO vnesti polno ime in povezavo do profila raziskovalca/ke (https://scholar.google.com/ ali https://www.researchgate.net/).
+V datoteko *profiles.json* je potrebno ROČNO vnesti polno ime in povezavo do profila raziskovalca/ke ([google scholar](https://scholar.google.com/) ali [research gate](https://www.researchgate.net/)).
 
 V kolikor že imamo datoteko z imeni (1 ime v 1 vrsti), lahko to datoteko preimenujemo v `imena.txt` in v `main.py` zakomentiramo klic *main()* in odkomentiramo klic *create_jsonNames('imena.txt', NAMES_FILE)*.
 Ta funkcija bo delno ustvarila json datoteko v pričakovanem formatu, vendar je še vedno potrebno ročno vnesti povezavo do uporabnikovega profila.
@@ -19,17 +19,35 @@ Ta funkcija bo delno ustvarila json datoteko v pričakovanem formatu, vendar je 
 json datoteka po klicu *create_jsonNames('imena.txt', NAMES_FILE)*:
 ```json
 [
-	{"fullName": "John Doe", "scholarUrl": ""}, 
+	{"fullName": "John Doe", "profileUrl": ""}, 
 ]
 ```
 
-pričakovan format končni:
+pričakovan končni format za *profiles.json*:
 ```json
 [
-	{"fullName": "John Doe", "scholarUrl": "https://scholar.google.com/citations?user=<profile id>"},
-    {"fullName": "John2 Doe2", "scholarUrl": "https://www.researchgate.net/profile/John-Doe"},
+	{"fullName": "John Doe", "profileUrl": "https://scholar.google.com/citations?user=<profile id>"},
+    {"fullName": "John2 Doe2", "profileUrl": "https://www.researchgate.net/profile/John-Doe"},
     ...
 ]
+```
+
+Ko smo v celoti izpolnili *profiles.json*, lahko zaženemo main.py, kot rezultat dobimo *articles.json*.
+
+*articles.json* format
+```json
+[{
+	"fullName": "John Doe",
+	"profileUrl": "<url to user profile>",
+    "interestTags": ["<ai or something>", ],
+	"atricles": [
+			{
+				"title": "<title>",
+				"url": "<article page url>",
+				"year": "<published year>"
+			},
+		]
+}, ]
 ```
 
 # ROBOTS.TXT

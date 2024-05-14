@@ -58,7 +58,7 @@ def getScholarProfileTags(profileBs4) -> list:
 
 	return tags
 
-def parseScholarPage(profilePageUrl) -> list:
+def parseScholarPage(profilePageUrl) -> dict:
 	loadMoreBtnId = 'gsc_bpf_more'
 	articleTrElemClass = 'gsc_a_tr'
 
@@ -77,10 +77,9 @@ def parseScholarPage(profilePageUrl) -> list:
 	soup = BeautifulSoup(driver.page_source, 'html.parser')
 	userInterestTags = getScholarProfileTags(soup)
 
-	# don't parse profile if it doesn't have any tags or don't have at least 1 we're in interested in
-	if len(userInterestTags) == 0 or checkIfUserTagsAreInteresting(userInterestTags) == False:
+	if len(userInterestTags) > 0 and checkIfUserTagsAreInteresting(userInterestTags) == False:
 		driver.quit()
-		return []
+		return {'urls': [],'tags': []}
 
 	loadMoreBtn = soup.find('button', {'id': loadMoreBtnId})
 
@@ -103,10 +102,7 @@ def parseScholarPage(profilePageUrl) -> list:
 	# close "browser" to save resources
 	driver.quit()
 
-	if trs == None:
-		return []
-
-	return getScholarArticlesLinks(trs)
+	return {'urls': getScholarArticlesLinks(trs) if trs != None else [], 'tags': userInterestTags if userInterestTags != None else []}
 
 def getResearchGateAtricleLinks(articleCards) -> list:
 	articlesLinks = []
@@ -139,7 +135,7 @@ def getResearchGateProfileTags(profileBs4) -> list:
 
 	return tags
 
-def parseResearchGateProfile(profilePageUrl) -> list:
+def parseResearchGateProfile(profilePageUrl) -> dict:
 	researchItemsDivId = 'research-items'
 	publicationCardClass = 'nova-legacy-o-stack__item'
 
@@ -154,10 +150,9 @@ def parseResearchGateProfile(profilePageUrl) -> list:
 		response = requests.get(profileUrl, headers=headers)
 		research = BeautifulSoup(response.text, 'html.parser')
 
-		# don't parse profile if it doesn't have any tags or don't have at least 1 we're in interested in
 		if pageNum == 1:
 			userInterestTags = getResearchGateProfileTags(research)
-			if len(userInterestTags) == 0 or checkIfUserTagsAreInteresting(userInterestTags) == False:
+			if len(userInterestTags) > 0 and checkIfUserTagsAreInteresting(userInterestTags) == False:
 				break
 
 		cardsBody = research.find('div', {'id': researchItemsDivId})
@@ -171,7 +166,7 @@ def parseResearchGateProfile(profilePageUrl) -> list:
 		pageNum += 1
 		time.sleep(0.5)
 
-	return articleLinks
+	return {'urls': articleLinks, 'tags': userInterestTags if userInterestTags != None else []}
 
 def main():
 	try:
@@ -192,12 +187,12 @@ def main():
 
 		print(f'parsing {researcher["fullName"]}')
 
-		userArticles = []
+		parsed = {}
 		if profileUrl.startswith('https://scholar.google.com/'):
-			userArticles = parseScholarPage(profileUrl)
+			parsed = parseScholarPage(profileUrl)
 			time.sleep(5)  # Sleep between each requests to (hopefully) avoid google ip ban...
 		elif profileUrl.startswith('https://www.researchgate.net/'):
-			userArticles = parseResearchGateProfile(profileUrl)
+			parsed = parseResearchGateProfile(profileUrl)
 			time.sleep(2)
 		else:
 			print(f"unsuported profile {researcher['fullName']} ({profileUrl})")
@@ -205,13 +200,14 @@ def main():
 			print()
 
 		# only add profiles with at least 1 article
-		if len(userArticles) == 0:
+		if len(parsed['urls']) == 0:
 			continue
 
 		fullProfile = {}
 		fullProfile['fullName'] = researcher['fullName']
 		fullProfile['profileUrl'] = profileUrl
-		fullProfile['articles'] = userArticles
+		fullProfile['interestTags'] = parsed['tags']
+		fullProfile['articles'] = parsed['urls']
 
 		profilesWithArticles.append(fullProfile)
 
@@ -241,10 +237,3 @@ def create_jsonNames(input_file, output_file):
 
 # 2. run main
 main()
-
-def test():
-	url = 'https://www.researchgate.net/profile/Matej-Rojc'
-	l = parseResearchGateProfile(url)
-	print(l)
-
-#test()

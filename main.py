@@ -10,6 +10,7 @@ import requests
 NAMES_FILE = 'profiles_test.json' # shorter profiles.json
 ARTICLES_FILE = 'atricles.json'
 INTEREST_TAGS = ['Recommender systems', 'natural language processing', 'language technologies', 'data mining', 'text mining']
+USE_INTEREST_TAGS = True # set to False if you don't want to filter profiles based on interest tags
 
 INTEREST_TAGS = [tag.lower() for tag in INTEREST_TAGS]
 
@@ -77,7 +78,7 @@ def parseScholarPage(profilePageUrl) -> dict:
 	soup = BeautifulSoup(driver.page_source, 'html.parser')
 	userInterestTags = getScholarProfileTags(soup)
 
-	if len(userInterestTags) > 0 and checkIfUserTagsAreInteresting(userInterestTags) == False:
+	if USE_INTEREST_TAGS and len(userInterestTags) > 0 and checkIfUserTagsAreInteresting(userInterestTags) == False:
 		driver.quit()
 		return {'urls': [],'tags': []}
 
@@ -152,7 +153,7 @@ def parseResearchGateProfile(profilePageUrl) -> dict:
 
 		if pageNum == 1:
 			userInterestTags = getResearchGateProfileTags(research)
-			if len(userInterestTags) > 0 and checkIfUserTagsAreInteresting(userInterestTags) == False:
+			if USE_INTEREST_TAGS and len(userInterestTags) > 0 and checkIfUserTagsAreInteresting(userInterestTags) == False:
 				break
 
 		cardsBody = research.find('div', {'id': researchItemsDivId})

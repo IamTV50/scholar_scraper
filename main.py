@@ -216,13 +216,20 @@ def main():
 
 def create_jsonNames(input_file, output_file):
 	researchers = []
+	encountered_names = set()
+
 	with open(input_file, 'r', encoding='utf-8') as file:
 		for line in file:
-			if line == "\n" or line == "":
+			if line.strip() == "":
 				continue
 
-			name = line.strip()
-			researcher = {"fullName": name, "profileUrl": ""}
+			name = line.strip().lower()  # Convert name to lowercase for case-insensitive comparison
+			if name in encountered_names:
+				continue  # Skip duplicate name
+			else:
+				encountered_names.add(name)
+
+			researcher = {"fullName": line.strip(), "profileUrl": ""}
 			researchers.append(researcher)
 
 	with open(output_file, 'w', encoding='utf-8') as json_file:

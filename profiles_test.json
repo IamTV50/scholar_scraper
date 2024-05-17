@@ -1,26 +1,32 @@
 [
-	{
-		"fullName": "Ana Sepe",
-		"profileUrl": "https://www.researchgate.net/profile/Ana_Sepe"
-	},
-	{
+    {
+        "fullName": "Ana Sepe",
+        "profileUrl": "https://www.researchgate.net/profile/Ana_Sepe",
+        "researchFacility": "JSI"
+    },
+    {
         "fullName": "Andreja Bizjak",
-        "profileUrl": ""
+        "profileUrl": "",
+        "researchFacility": ""
     },
-	{
+    {
         "fullName": "Matej Rojc",
-        "profileUrl": "https://www.researchgate.net/profile/Matej-Rojc"
+        "profileUrl": "https://www.researchgate.net/profile/Matej-Rojc",
+        "researchFacility": "UM"
     },
-	{
+    {
         "fullName": "Mladen Borovič",
-        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=GfWPBH0AAAAJ"
+        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=GfWPBH0AAAAJ",
+        "researchFacility": "UM"
     },
-	{
+    {
         "fullName": "Matevž Bratina",
-        "profileUrl": "https://www.researchgate.net/profile/Matevz_Bratina"
+        "profileUrl": "https://www.researchgate.net/profile/Matevz_Bratina",
+        "researchFacility": "UM"
     },
-	{
+    {
         "fullName": "Umut Ariöz",
-        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=E2JZeR4AAAAJ"
+        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=E2JZeR4AAAAJ",
+        "researchFacility": "UM"
     }
 ]

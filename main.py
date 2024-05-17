@@ -4,7 +4,6 @@ import json
 from selenium import webdriver
 from selenium.webdriver import ChromeOptions
 from selenium.webdriver.common.by import By
-import requests
 
 #NAMES_FILE = 'profiles.json'
 NAMES_FILE = 'profiles_test.json' # shorter profiles.json
@@ -116,7 +115,7 @@ def parseScholarPage(profilePageUrl) -> dict:
 
 	return {'urls': getScholarArticlesLinks(trs) if trs != None else [], 'tags': userInterestTags if userInterestTags != None else []}
 
-def getResearchGateAtricleLinks(articleCards) -> list:
+def getResearchGateArticleLinks(articleCards) -> list:
 	articlesLinks = []
 	aClass = 'nova-legacy-e-link nova-legacy-e-link--color-inherit nova-legacy-e-link--theme-bare'
 	yearLiClass = 'nova-legacy-e-list__item nova-legacy-v-publication-item__meta-data-item'
@@ -151,32 +150,39 @@ def parseResearchGateProfile(profilePageUrl) -> dict:
 	researchItemsDivId = 'research-items'
 	publicationCardClass = 'nova-legacy-o-stack__item'
 
-	headers = {
-		"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.9999.99 Safari/537.36"
-	}
+	options = ChromeOptions()
+	# options.add_argument("--headless")  # Run the browser in headless mode
+	driver = webdriver.Chrome(options=options)  # Path to your ChromeDriver
 
 	articleLinks = []
 	pageNum = 1
 	while True:
 		profileUrl = profilePageUrl if pageNum == 1 else f'{profilePageUrl}/{str(pageNum)}'
-		response = requests.get(profileUrl, headers=headers)
-		research = BeautifulSoup(response.text, 'html.parser')
+		driver.minimize_window()
+		driver.get(profileUrl)
+		time.sleep(2)  # Add a delay to allow the page to load
+
+		# Now, grab the page source
+		page_source = driver.page_source
+		research = BeautifulSoup(page_source, 'html.parser')
 
 		if pageNum == 1:
 			userInterestTags = getResearchGateProfileTags(research)
-			if USE_INTEREST_TAGS and len(userInterestTags) > 0 and checkIfUserTagsAreInteresting(userInterestTags) == False:
+			if USE_INTEREST_TAGS and len(userInterestTags) > 0 and not checkIfUserTagsAreInteresting(userInterestTags):
 				break
 
 		cardsBody = research.find('div', {'id': researchItemsDivId})
 
-		if cardsBody == None:
+		if cardsBody is None:
 			break
 
 		researchCards = cardsBody.find_all('div', {'class': publicationCardClass})
-		articleLinks.extend(getResearchGateAtricleLinks(researchCards))
+		articleLinks.extend(getResearchGateArticleLinks(researchCards))
 
 		pageNum += 1
-		time.sleep(0.5)
+		time.sleep(0.5)  # Add a small delay between page loads
+
+	driver.quit()  # Close the browser
 
 	return {'urls': articleLinks, 'tags': userInterestTags if userInterestTags != None else []}
 
@@ -205,7 +211,7 @@ def main():
 			time.sleep(5)  # Sleep between each requests to (hopefully) avoid google ip ban...
 		elif profileUrl.startswith('https://www.researchgate.net/'):
 			parsed = parseResearchGateProfile(profileUrl)
-			time.sleep(2)
+			time.sleep(3)
 		else:
 			print(f"unsuported profile {researcher['fullName']} ({profileUrl})")
 			print("profile need to be either 'https://scholar.google.com/...' or 'https://www.researchgate.net/...'")
@@ -218,6 +224,7 @@ def main():
 		fullProfile = {}
 		fullProfile['fullName'] = researcher['fullName']
 		fullProfile['profileUrl'] = profileUrl
+		fullProfile['researchFacility'] = researcher['researchFacility'] if researcher['researchFacility'] != '' else None
 		fullProfile['interestTags'] = parsed['tags']
 		fullProfile['articles'] = parsed['urls']
 

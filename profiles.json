@@ -1,598 +1,747 @@
 [
     {
         "fullName": "Milan Ojsteršek",
-        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=kyQveUYAAAAJ"
+        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=kyQveUYAAAAJ",
+        "researchFacility": "UM"
     },
     {
         "fullName": "Mladen Borovič",
-        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=GfWPBH0AAAAJ"
+        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=GfWPBH0AAAAJ",
+        "researchFacility": "UM"
     },
     {
         "fullName": "Albin Bregant",
-        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=E5sBWfYAAAAJ"
+        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=E5sBWfYAAAAJ",
+        "researchFacility": "UM"
     },
     {
         "fullName": "Janez Brezovnik",
-        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=NWWgN5MAAAAJ"
+        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=NWWgN5MAAAAJ",
+        "researchFacility": "UM"
     },
     {
         "fullName": "Marko Ferme",
-        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=3sXoX8wAAAAJ"
+        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=3sXoX8wAAAAJ",
+        "researchFacility": ""
     },
     {
         "fullName": "Sandi Majninger",
-        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=QUrFFI0AAAAJ"
+        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=QUrFFI0AAAAJ",
+        "researchFacility": ""
     },
     {
         "fullName": "Zdravko Kačič",
-        "profileUrl": "https://www.researchgate.net/profile/Zdravko-Kacic"
+        "profileUrl": "https://www.researchgate.net/profile/Zdravko-Kacic",
+        "researchFacility": "UM"
     },
     {
         "fullName": "Matej Rojc",
-        "profileUrl": "https://www.researchgate.net/profile/Matej-Rojc"
+        "profileUrl": "https://www.researchgate.net/profile/Matej-Rojc",
+        "researchFacility": "UM"
     },
     {
         "fullName": "Umut Ariöz",
-        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=E2JZeR4AAAAJ"
+        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=E2JZeR4AAAAJ",
+        "researchFacility": "UM"
     },
     {
         "fullName": "Špela Antloga",
-        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=CoRU1soAAAAJ"
+        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=CoRU1soAAAAJ",
+        "researchFacility": "UM"
     },
     {
         "fullName": "Uroš Berglez",
-        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=cmy_Jt0AAAAJ"
+        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=cmy_Jt0AAAAJ",
+        "researchFacility": "UM"
     },
     {
         "fullName": "Matevž Bratina",
-        "profileUrl": "https://www.researchgate.net/profile/Matevz_Bratina"
+        "profileUrl": "https://www.researchgate.net/profile/Matevz_Bratina",
+        "researchFacility": "UM"
     },
     {
         "fullName": "Andreja Bizjak",
-        "profileUrl": ""
+        "profileUrl": "",
+        "researchFacility": ""
     },
     {
         "fullName": "Karlo Crnek",
-        "profileUrl": "https://www.researchgate.net/profile/Karlo_Crnek"
+        "profileUrl": "https://www.researchgate.net/profile/Karlo_Crnek",
+        "researchFacility": "UM"
     },
     {
         "fullName": "Gregor Donaj",
-        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=mzOW3mMAAAAJ"
+        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=mzOW3mMAAAAJ",
+        "researchFacility": "UM"
     },
     {
         "fullName": "Daniel Hari",
-        "profileUrl": "https://www.researchgate.net/profile/Daniel-Hari"
+        "profileUrl": "https://www.researchgate.net/profile/Daniel-Hari",
+        "researchFacility": "UM"
     },
     {
         "fullName": "Lucija Gril",
-        "profileUrl": "https://www.researchgate.net/profile/Lucija-Gril"
+        "profileUrl": "https://www.researchgate.net/profile/Lucija-Gril",
+        "researchFacility": "UM"
     },
     {
         "fullName": "Simona Majhenič",
-        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=SZSrOJ0AAAAJ"
+        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=SZSrOJ0AAAAJ",
+        "researchFacility": "UM"
     },
     {
         "fullName": "Izidor Mlakar",
-        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=-QbzGSYAAAAJ"
+        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=-QbzGSYAAAAJ",
+        "researchFacility": "UM"
     },
     {
         "fullName": "Grega Močnik",
-        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=7E56lXMAAAAJ"
+        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=7E56lXMAAAAJ",
+        "researchFacility": ""
     },
     {
         "fullName": "Mirjam Sepesy Maučec",
-        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=Fp-jXD0AAAAJ"
+        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=Fp-jXD0AAAAJ",
+        "researchFacility": "UM"
     },
     {
         "fullName": "Urška Smrke",
-        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=XEXqnK4AAAAJ"
+        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=XEXqnK4AAAAJ",
+        "researchFacility": "UM"
     },
     {
         "fullName": "Valentino Šafran",
-        "profileUrl": "https://www.researchgate.net/profile/Valentino-Safran"
+        "profileUrl": "https://www.researchgate.net/profile/Valentino-Safran",
+        "researchFacility": "UM"
     },
     {
         "fullName": "Darinka Verdonik",
-        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=4HKh9IwAAAAJ"
+        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=4HKh9IwAAAAJ",
+        "researchFacility": "UM"
     },
     {
         "fullName": "Damjan Vlaj",
-        "profileUrl": ""
+        "profileUrl": "",
+        "researchFacility": ""
     },
     {
         "fullName": "Andreja Zalokar",
-        "profileUrl": ""
+        "profileUrl": "",
+        "researchFacility": ""
     },
     {
         "fullName": "Danilo Zimšek",
-        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=1QMYGAgAAAAJ"
+        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=1QMYGAgAAAAJ",
+        "researchFacility": "UM"
     },
     {
         "fullName": "Aleksandra Zögling Markuš",
-        "profileUrl": "https://www.researchgate.net/profile/Aleksandra-Markus"
+        "profileUrl": "https://www.researchgate.net/profile/Aleksandra-Markus",
+        "researchFacility": "UM"
     },
     {
         "fullName": "Andrej Žgank",
-        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=iupohI4AAAAJ"
+        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=iupohI4AAAAJ",
+        "researchFacility": "UM"
     },
     {
         "fullName": "Špela Arhar Holdt",
-        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=lgQkjDgAAAAJ"
+        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=lgQkjDgAAAAJ",
+        "researchFacility": "UL"
     },
     {
         "fullName": "Jaka Čibej",
-        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=n56k8E0AAAAJ"
+        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=n56k8E0AAAAJ",
+        "researchFacility": "UL"
     },
     {
         "fullName": "Kaja Dobrovoljc",
-        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=KWq-H4AAAAAJ"
+        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=KWq-H4AAAAAJ",
+        "researchFacility": "UL"
     },
     {
         "fullName": "Polona Gantar",
-        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=MrzFv7YAAAAJ"
+        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=MrzFv7YAAAAJ",
+        "researchFacility": "UL"
     },
     {
         "fullName": "Teja Goli",
-        "profileUrl": "https://www.researchgate.net/profile/Teja-Goli"
+        "profileUrl": "https://www.researchgate.net/profile/Teja-Goli",
+        "researchFacility": "UL"
     },
     {
         "fullName": "Bojan Klemenc",
-        "profileUrl": "https://www.researchgate.net/profile/Bojan-Klemenc-2"
+        "profileUrl": "https://www.researchgate.net/profile/Bojan-Klemenc-2",
+        "researchFacility": "UL"
     },
     {
         "fullName": "Iztok Kosem",
-        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=7y5KHdQAAAAJ"
+        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=7y5KHdQAAAAJ",
+        "researchFacility": "UL"
     },
     {
         "fullName": "Simon Krek",
-        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=WMmdmdwAAAAJ"
+        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=WMmdmdwAAAAJ",
+        "researchFacility": "JSI"
     },
     {
         "fullName": "Cyprian Laskowski",
-        "profileUrl": ""
+        "profileUrl": "",
+        "researchFacility": ""
     },
     {
         "fullName": "Nikola Ljubešić",
-        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=zto4fTQAAAAJ"
+        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=zto4fTQAAAAJ",
+        "researchFacility": "JSI"
     },
     {
         "fullName": "Eva Pori",
-        "profileUrl": ""
+        "profileUrl": "",
+        "researchFacility": ""
     },
     {
         "fullName": "Marko Robnik Šikonja",
-        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=Bo-VQjkAAAAJ"
+        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=Bo-VQjkAAAAJ",
+        "researchFacility": "UL"
     },
     {
         "fullName": "Zoran Bosnić",
-        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=IBZ3fMcAAAAJ"
+        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=IBZ3fMcAAAAJ",
+        "researchFacility": "UL"
     },
     {
         "fullName": "Mojca Svetek",
-        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=BzuHbA0AAAAJ"
+        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=BzuHbA0AAAAJ",
+        "researchFacility": "UL"
     },
     {
         "fullName": "Nejc Robida",
-        "profileUrl": "https://www.researchgate.net/profile/Nejc-Robida"
+        "profileUrl": "https://www.researchgate.net/profile/Nejc-Robida",
+        "researchFacility": "UL"
     },
     {
         "fullName": "Aleksandra Lutar Ivanc",
-        "profileUrl": ""
+        "profileUrl": "",
+        "researchFacility": ""
     },
     {
         "fullName": "Martin Božič",
-        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=jIiu2noAAAAJ"
+        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=jIiu2noAAAAJ",
+        "researchFacility": "UL"
     },
     {
         "fullName": "Bernarda Petek",
-        "profileUrl": "https://www.researchgate.net/profile/Bernarda-Petek"
+        "profileUrl": "https://www.researchgate.net/profile/Bernarda-Petek",
+        "researchFacility": "UL"
     },
     {
         "fullName": "Magdalena Gapsa",
-        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=3m1-eYsAAAAJ"
+        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=3m1-eYsAAAAJ",
+        "researchFacility": "UL"
     },
     {
         "fullName": "David Nabergoj",
-        "profileUrl": "https://www.researchgate.net/profile/David-Nabergoj"
+        "profileUrl": "https://www.researchgate.net/profile/David-Nabergoj",
+        "researchFacility": "UL"
     },
     {
         "fullName": "Irena von Arx Ograjenšek",
-        "profileUrl": ""
+        "profileUrl": "",
+        "researchFacility": ""
     },
     {
         "fullName": "Matej Klemen",
-        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=mP70VWQAAAAJ"
+        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=mP70VWQAAAAJ",
+        "researchFacility": "UL"
     },
     {
         "fullName": "Domen Vreš",
-        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=wLly01IAAAAJ"
+        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=wLly01IAAAAJ",
+        "researchFacility": "UL"
     },
     {
         "fullName": "Borut Flis",
-        "profileUrl": ""
+        "profileUrl": "",
+        "researchFacility": ""
     },
     {
         "fullName": "Leon Hvastja",
-        "profileUrl": ""
+        "profileUrl": "",
+        "researchFacility": ""
     },
     {
         "fullName": "Apolonija Gantar",
-        "profileUrl": "https://www.researchgate.net/profile/Apolonija-Gantar-2"
+        "profileUrl": "https://www.researchgate.net/profile/Apolonija-Gantar-2",
+        "researchFacility": "ZRC SAZU"
     },
     {
         "fullName": "Aleš Popovič",
-        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=zZSG1zEAAAAJ"
+        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=zZSG1zEAAAAJ",
+        "researchFacility": "NEOMA BS"
     },
     {
         "fullName": "Luka Terčon",
-        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=fP8RXLEAAAAJ"
+        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=fP8RXLEAAAAJ",
+        "researchFacility": "UL"
     },
     {
         "fullName": "Karolina Zgaga",
-        "profileUrl": ""
+        "profileUrl": "",
+        "researchFacility": ""
     },
     {
         "fullName": "Rebeka Roblek",
-        "profileUrl": ""
+        "profileUrl": "",
+        "researchFacility": ""
     },
     {
         "fullName": "Matjaž Kukar",
-        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=3ROYHCsAAAAJ"
+        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=3ROYHCsAAAAJ",
+        "researchFacility": "UL"
     },
     {
         "fullName": "Cyprian Adam Laskowski",
-        "profileUrl": ""
+        "profileUrl": "",
+        "researchFacility": ""
     },
     {
         "fullName": "Matej Pičulin",
-        "profileUrl": ""
+        "profileUrl": "",
+        "researchFacility": ""
     },
     {
         "fullName": "Erik Štrumbelj",
-        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=B4CBwQIAAAAJ"
+        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=B4CBwQIAAAAJ",
+        "researchFacility": "UL"
     },
     {
         "fullName": "Petar Vračar",
-        "profileUrl": ""
+        "profileUrl": "",
+        "researchFacility": ""
     },
     {
         "fullName": "Jana Faganeli Pucer",
-        "profileUrl": ""
+        "profileUrl": "",
+        "researchFacility": ""
     },
     {
         "fullName": "Tadej Škvorc",
-        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=ROCzvq0AAAAJ"
+        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=ROCzvq0AAAAJ",
+        "researchFacility": "UL"
     },
     {
         "fullName": "Bojan Žunkovič",
-        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=meYvRtcAAAAJ"
+        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=meYvRtcAAAAJ",
+        "researchFacility": "UL"
     },
     {
         "fullName": "Aleš Žagar",
-        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=6B-FGVgAAAAJ"
+        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=6B-FGVgAAAAJ",
+        "researchFacility": "UL"
     },
     {
         "fullName": "Marko Zeman",
-        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=xXfPmbgAAAAJ"
+        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=xXfPmbgAAAAJ",
+        "researchFacility": "UL"
     },
     {
         "fullName": "Kaja Gantar",
-        "profileUrl": "https://www.researchgate.net/profile/Kaja-Gantar"
+        "profileUrl": "https://www.researchgate.net/profile/Kaja-Gantar",
+        "researchFacility": "UL"
     },
     {
         "fullName": "Tjaša Arčon",
-        "profileUrl": ""
+        "profileUrl": "",
+        "researchFacility": ""
     },
     {
         "fullName": "Marko Bajec",
-        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=ixQ7Ti8AAAAJ"
+        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=ixQ7Ti8AAAAJ",
+        "researchFacility": "UL"
     },
     {
         "fullName": "Harun Demir",
-        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=jo_zyTgAAAAJ"
+        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=jo_zyTgAAAAJ",
+        "researchFacility": "Dogus University"
     },
     {
         "fullName": "Primož Šiško",
-        "profileUrl": "https://www.researchgate.net/profile/Primoz-Sisko"
+        "profileUrl": "https://www.researchgate.net/profile/Primoz-Sisko",
+        "researchFacility": "UM"
     },
     {
         "fullName": "Vanja Mileski",
-        "profileUrl": ""
+        "profileUrl": "",
+        "researchFacility": ""
     },
     {
         "fullName": "Luka Maček",
-        "profileUrl": "https://www.researchgate.net/profile/Luka-Macek"
+        "profileUrl": "https://www.researchgate.net/profile/Luka-Macek",
+        "researchFacility": "UL"
     },
     {
         "fullName": "Matija Lokar",
-        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=j6QeVNcAAAAJ"
+        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=j6QeVNcAAAAJ",
+        "researchFacility": "UL"
     },
     {
         "fullName": "Dániel Erdélyhegyi",
-        "profileUrl": ""
+        "profileUrl": "",
+        "researchFacility": ""
     },
     {
         "fullName": "Atiyeh Ghane",
-        "profileUrl": ""
+        "profileUrl": "",
+        "researchFacility": ""
     },
     {
         "fullName": "Jan Ivanetič",
-        "profileUrl": ""
+        "profileUrl": "",
+        "researchFacility": ""
     },
     {
         "fullName": "Arvin Jušić",
-        "profileUrl": ""
+        "profileUrl": "",
+        "researchFacility": ""
     },
     {
         "fullName": "Gaber Polajnar",
-        "profileUrl": ""
+        "profileUrl": "",
+        "researchFacility": ""
     },
     {
         "fullName": "Teodora Mishevska Kochovski",
-        "profileUrl": "https://www.researchgate.net/profile/Teodora-Mishevska"
+        "profileUrl": "https://www.researchgate.net/profile/Teodora-Mishevska",
+        "researchFacility": "UL"
     },
     {
         "fullName": "Iztok Škof",
-        "profileUrl": "https://www.researchgate.net/profile/Iztok-Skof"
+        "profileUrl": "https://www.researchgate.net/profile/Iztok-Skof",
+        "researchFacility": "UL"
     },
     {
         "fullName": "Jernej Markelj",
-        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=iCgZefQAAAAJ"
+        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=iCgZefQAAAAJ",
+        "researchFacility": "UL"
     },
     {
         "fullName": "Tatjana Pliberšek",
-        "profileUrl": ""
+        "profileUrl": "",
+        "researchFacility": ""
     },
     {
         "fullName": "Pouriya Miri",
-        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=gZhh86oAAAAJ"
+        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=gZhh86oAAAAJ",
+        "researchFacility": "UL"
     },
     {
         "fullName": "Davorka Šel",
-        "profileUrl": ""
+        "profileUrl": "",
+        "researchFacility": ""
     },
     {
         "fullName": "Jernej Trnkoczy",
-        "profileUrl": "https://www.researchgate.net/profile/Jernej-Trnkoczy"
+        "profileUrl": "https://www.researchgate.net/profile/Jernej-Trnkoczy",
+        "researchFacility": "UL"
     },
     {
         "fullName": "Zala Gruden",
-        "profileUrl": "https://www.researchgate.net/profile/Zala-Gruden"
+        "profileUrl": "https://www.researchgate.net/profile/Zala-Gruden",
+        "researchFacility": "UL"
     },
     {
         "fullName": "Tadej Slemenšek",
-        "profileUrl": ""
+        "profileUrl": "",
+        "researchFacility": ""
     },
     {
         "fullName": "Luka Mali",
-        "profileUrl": "https://www.researchgate.net/profile/Luka-Mali"
+        "profileUrl": "https://www.researchgate.net/profile/Luka-Mali",
+        "researchFacility": "UL"
     },
     {
         "fullName": "Tjaša Šoltes",
-        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=zcHip_MAAAAJ"
+        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=zcHip_MAAAAJ",
+        "researchFacility": "UL"
     },
     {
         "fullName": "Mitja Rizvič",
-        "profileUrl": ""
+        "profileUrl": "",
+        "researchFacility": ""
     },
     {
         "fullName": "Petar Kochovski",
-        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=5dF0CpYAAAAJ"
+        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=5dF0CpYAAAAJ",
+        "researchFacility": "UL"
     },
     {
         "fullName": "Jernej Cvek",
-        "profileUrl": "https://www.researchgate.net/profile/Jernej-Cvek-2"
+        "profileUrl": "https://www.researchgate.net/profile/Jernej-Cvek-2",
+        "researchFacility": "UL"
     },
     {
         "fullName": "Slavko Žitnik",
-        "profileUrl": "https://scholar.google.com/citations?user=O8WaRkUAAAAJ&hl=sl&oi=ao"
+        "profileUrl": "https://scholar.google.com/citations?user=O8WaRkUAAAAJ&hl=sl&oi=ao",
+        "researchFacility": "UL"
     },
     {
         "fullName": "Aljaž Zrnec",
-        "profileUrl": "https://www.researchgate.net/profile/Aljaz-Zrnec"
+        "profileUrl": "https://www.researchgate.net/profile/Aljaz-Zrnec",
+        "researchFacility": "UL"
     },
     {
         "fullName": "Lovro Šubelj",
-        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=oMFR6pEAAAAJ"
+        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=oMFR6pEAAAAJ",
+        "researchFacility": "UL"
     },
     {
         "fullName": "Vlado Stankovski",
-        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=v25NEA0AAAAJ"
+        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=v25NEA0AAAAJ",
+        "researchFacility": "UL"
     },
     {
         "fullName": "Dejan Lavbič",
-        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=sNPbwOIAAAAJ"
+        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=sNPbwOIAAAAJ",
+        "researchFacility": "UL"
     },
     {
         "fullName": "Sandi Gec",
-        "profileUrl": "https://www.researchgate.net/profile/Sandi-Gec"
+        "profileUrl": "https://www.researchgate.net/profile/Sandi-Gec",
+        "researchFacility": "UL"
     },
     {
         "fullName": "Svetlana Fuks",
-        "profileUrl": ""
+        "profileUrl": "",
+        "researchFacility": ""
     },
     {
         "fullName": "Luka Bradeško",
-        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=KUazktYAAAAJ"
+        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=KUazktYAAAAJ",
+        "researchFacility": ""
     },
     {
         "fullName": "Janez Brank",
-        "profileUrl": "https://www.researchgate.net/profile/Janez-Brank"
+        "profileUrl": "https://www.researchgate.net/profile/Janez-Brank",
+        "researchFacility": "JSI"
     },
     {
         "fullName": "Miha Cimperman",
-        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=3SjvQLsAAAAJ"
+        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=3SjvQLsAAAAJ",
+        "researchFacility": "JSI"
     },
     {
         "fullName": "Damjan Bojadžiev",
-        "profileUrl": "https://www.researchgate.net/profile/Damjan-Bojadziev"
+        "profileUrl": "https://www.researchgate.net/profile/Damjan-Bojadziev",
+        "researchFacility": "JSI"
     },
     {
         "fullName": "Blaž Fortuna",
-        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=LCPDIKIAAAAJ"
+        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=LCPDIKIAAAAJ",
+        "researchFacility": "JSI"
     },
     {
         "fullName": "Rayid Ghani",
-        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=_ufWH4IAAAAJ"
+        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=_ufWH4IAAAAJ",
+        "researchFacility": "CMU"
     },
     {
         "fullName": "Marko Grobelnik",
-        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=_B20XKgAAAAJ"
+        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=_B20XKgAAAAJ",
+        "researchFacility": "JSI"
     },
     {
         "fullName": "Jakob Jelenčič",
-        "profileUrl": ""
+        "profileUrl": "",
+        "researchFacility": ""
     },
     {
         "fullName": "Mitja Jermol",
-        "profileUrl": "https://www.researchgate.net/profile/Mitja-Jermol"
+        "profileUrl": "https://www.researchgate.net/profile/Mitja-Jermol",
+        "researchFacility": "JSI"
     },
     {
         "fullName": "Branko Kavšek",
-        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=_W11eVUAAAAJ"
+        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=_W11eVUAAAAJ",
+        "researchFacility": "JSI"
     },
     {
         "fullName": "Klemen Kenda",
-        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=6-XqwcwAAAAJ"
+        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=6-XqwcwAAAAJ",
+        "researchFacility": "JSI"
     },
     {
         "fullName": "Aljaž Košmerlj",
-        "profileUrl": "https://www.researchgate.net/profile/Aljaz-Kosmerlj"
+        "profileUrl": "https://www.researchgate.net/profile/Aljaz-Kosmerlj",
+        "researchFacility": "JSI"
     },
     {
         "fullName": "Gregor Leban",
-        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=5pAxBWsAAAAJ"
+        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=5pAxBWsAAAAJ",
+        "researchFacility": "JSI"
     },
     {
         "fullName": "Jure Leskovec",
-        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=Q_kKkIUAAAAJ"
+        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=Q_kKkIUAAAAJ",
+        "researchFacility": "Stanford University"
     },
     {
         "fullName": "Dunja Mladenić",
-        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=TdxG5D4AAAAJ"
+        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=TdxG5D4AAAAJ",
+        "researchFacility": "JSI"
     },
     {
         "fullName": "Blaž Novak",
-        "profileUrl": ""
+        "profileUrl": "",
+        "researchFacility": ""
     },
     {
         "fullName": "Erik Novak",
-        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=QKeReOoAAAAJ"
+        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=QKeReOoAAAAJ",
+        "researchFacility": "JSI"
     },
     {
         "fullName": "Inna Novalija",
-        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=lLrU-XYAAAAJ"
+        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=lLrU-XYAAAAJ",
+        "researchFacility": ""
     },
     {
         "fullName": "Joao Pita Costa",
-        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=A5wfoHsAAAAJ"
+        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=A5wfoHsAAAAJ",
+        "researchFacility": "IRCAI"
     },
     {
         "fullName": "Matej Posinković",
-        "profileUrl": ""
+        "profileUrl": "",
+        "researchFacility": ""
     },
     {
         "fullName": "Jose Martin Rožanec",
-        "profileUrl": "https://www.researchgate.net/profile/Jose-Rozanec"
+        "profileUrl": "https://www.researchgate.net/profile/Jose-Rozanec",
+        "researchFacility": ""
     },
     {
         "fullName": "Jan Rupnik",
-        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=u2PWuroAAAAJ"
+        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=u2PWuroAAAAJ",
+        "researchFacility": "JSI"
     },
     {
         "fullName": "John Shawe - Taylor",
-        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=1iE2ykkAAAAJ"
+        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=1iE2ykkAAAAJ",
+        "researchFacility": "UCL"
     },
     {
         "fullName": "Abdul Sittar",
-        "profileUrl": ""
+        "profileUrl": "",
+        "researchFacility": ""
     },
     {
         "fullName": "Ayse Sunar",
-        "profileUrl": ""
+        "profileUrl": "",
+        "researchFacility": ""
     },
     {
         "fullName": "Swati",
-        "profileUrl": ""
+        "profileUrl": "",
+        "researchFacility": ""
     },
     {
         "fullName": "Primož Škraba",
-        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=j6e4dFcAAAAJ"
+        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=j6e4dFcAAAAJ",
+        "researchFacility": "QMUL"
     },
     {
         "fullName": "Maja Škrjanc",
-        "profileUrl": "https://www.researchgate.net/profile/Maja-Skrjanc"
+        "profileUrl": "https://www.researchgate.net/profile/Maja-Skrjanc",
+        "researchFacility": "JSI"
     },
     {
         "fullName": "James Hodson",
-        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=Uj32IMsAAAAJ"
+        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=Uj32IMsAAAAJ",
+        "researchFacility": "JSI"
     },
     {
         "fullName": "Stefano Pacifico",
-        "profileUrl": ""
+        "profileUrl": "",
+        "researchFacility": ""
     },
     {
         "fullName": "Luka Stopar",
-        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=uZazDHgAAAAJ"
+        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=uZazDHgAAAAJ",
+        "researchFacility": "JSI"
     },
     {
         "fullName": "Tadej Štajner",
-        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=DeB2HNoAAAAJ"
+        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=DeB2HNoAAAAJ",
+        "researchFacility": ""
     },
     {
         "fullName": "Sabrina Guettes",
-        "profileUrl": ""
+        "profileUrl": "",
+        "researchFacility": ""
     },
     {
         "fullName": "Mario Karlovčec",
-        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=wrapAN8AAAAJ"
+        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=wrapAN8AAAAJ",
+        "researchFacility": ""
     },
     {
         "fullName": "Ganna Kudryavtseva",
-        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=H808U7AAAAAJ"
+        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=H808U7AAAAAJ",
+        "researchFacility": "JSI"
     },
     {
         "fullName": "Mojca Mikac",
-        "profileUrl": ""
+        "profileUrl": "",
+        "researchFacility": ""
     },
     {
         "fullName": "Alexandra Moraru",
-        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=2SWyLMMAAAAJ"
+        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=2SWyLMMAAAAJ",
+        "researchFacility": "JSI"
     },
     {
         "fullName": "Andrej Muhič",
-        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=wl5KSRIAAAAJ"
+        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=wl5KSRIAAAAJ",
+        "researchFacility": "UL"
     },
     {
         "fullName": "Matjaž Rihtar",
-        "profileUrl": ""
+        "profileUrl": "",
+        "researchFacility": ""
     },
     {
         "fullName": "Delia Rusu",
-        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=ywdCNdoAAAAJ"
+        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=ywdCNdoAAAAJ",
+        "researchFacility": "JSI"
     },
     {
         "fullName": "Dalija Sega",
-        "profileUrl": ""
+        "profileUrl": "",
+        "researchFacility": ""
     },
     {
         "fullName": "Janez Starc",
-        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=z5rn4a0AAAAJ"
+        "profileUrl": "https://scholar.google.com/citations?hl=sl&user=z5rn4a0AAAAJ",
+        "researchFacility": "JSI"
     },
     {
         "fullName": "Salman Taherizadeh",
-        "profileUrl": "https://www.researchgate.net/profile/Salman-Taherizadeh"
+        "profileUrl": "https://www.researchgate.net/profile/Salman-Taherizadeh",
+        "researchFacility": ""
     },
     {
         "fullName": "Miha Torkar",
-        "profileUrl": ""
+        "profileUrl": "",
+        "researchFacility": ""
     },
     {
         "fullName": "Mitja Trampuš",
-        "profileUrl": "https://www.researchgate.net/profile/Mitja-Trampus"
+        "profileUrl": "https://www.researchgate.net/profile/Mitja-Trampus",
+        "researchFacility": "JSI"
     },
     {
         "fullName": "Aleš Špetič",
-        "profileUrl": ""
+        "profileUrl": "",
+        "researchFacility": ""
     }
 ]

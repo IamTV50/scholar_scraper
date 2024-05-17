@@ -8,7 +8,7 @@ import requests
 
 #NAMES_FILE = 'profiles.json'
 NAMES_FILE = 'profiles_test.json' # shorter profiles.json
-ARTICLES_FILE = 'atricles.json'
+ARTICLES_FILE = 'articles.json'
 INTEREST_TAGS = ['Recommender systems', 'natural language processing', 'language technologies', 'data mining', 'text mining']
 USE_INTEREST_TAGS = True # set to False if you don't want to filter profiles based on interest tags
 

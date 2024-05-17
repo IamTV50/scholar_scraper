@@ -10,7 +10,18 @@ import requests
 NAMES_FILE = 'profiles_test.json' # shorter profiles.json
 ARTICLES_FILE = 'articles.json'
 INTEREST_TAGS = ['Recommender systems', 'natural language processing', 'language technologies', 'data mining', 'text mining']
-USE_INTEREST_TAGS = True # set to False if you don't want to filter profiles based on interest tags
+
+"""
+If USE_INTEREST_TAGS is set to True:
+- Articles are retrieved only for users whose profile includes at least one interest tag 
+  listed in the INTEREST_TAGS array.
+- Case-insensitive comparisons are used for tag matching.
+- If a user has no interest tags listed, articles from their profile are still retrieved.
+
+If USE_INTEREST_TAGS is set to False:
+- Articles are retrieved from all user profiles, regardless of their interest tags.
+"""
+USE_INTEREST_TAGS = True
 
 INTEREST_TAGS = [tag.lower() for tag in INTEREST_TAGS]
 

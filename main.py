@@ -5,8 +5,8 @@ from selenium import webdriver
 from selenium.webdriver import ChromeOptions
 from selenium.webdriver.common.by import By
 
-#NAMES_FILE = 'profiles.json'
-NAMES_FILE = 'profiles_test.json' # shorter profiles.json
+NAMES_FILE = 'profiles.json'
+#NAMES_FILE = 'profiles_test.json' # shorter profiles.json
 ARTICLES_FILE = 'articles.json'
 INTEREST_TAGS = ['Recommender systems', 'natural language processing', 'language technologies', 'data mining', 'text mining']
 
@@ -94,21 +94,24 @@ def parseScholarPage(profilePageUrl) -> dict:
 
 	loadMoreBtn = soup.find('button', {'id': loadMoreBtnId})
 
-	while 'disabled' not in loadMoreBtn.attrs:
-		moreBtn = driver.find_element(By.ID, loadMoreBtnId)
-		moreBtn.click()
-
-		time.sleep(2)  # DON'T DELETE!!!
-
-		# Add session cookies to the browser session
-		for cookie in cookies:
-			driver.add_cookie(cookie)
-
-		soup = BeautifulSoup(driver.page_source, 'html.parser')
-		loadMoreBtn = soup.find('button', {"id": loadMoreBtnId})
+	if 'disabled' in loadMoreBtn.attrs:
 		trs = soup.find_all('tr', {"class": articleTrElemClass})
+	else:
+		while 'disabled' not in loadMoreBtn.attrs:
+			moreBtn = driver.find_element(By.ID, loadMoreBtnId)
+			moreBtn.click()
 
-		time.sleep(1)
+			time.sleep(2)  # DON'T DELETE!!!
+
+			# Add session cookies to the browser session
+			for cookie in cookies:
+				driver.add_cookie(cookie)
+
+			soup = BeautifulSoup(driver.page_source, 'html.parser')
+			loadMoreBtn = soup.find('button', {"id": loadMoreBtnId})
+			trs = soup.find_all('tr', {"class": articleTrElemClass})
+
+			time.sleep(1)
 
 	# close "browser" to save resources
 	driver.quit()
@@ -203,8 +206,6 @@ def main():
 			print(f"MISSING profileUrl for {researcher['fullName']}")
 			continue
 
-		print(f'parsing {researcher["fullName"]}')
-
 		parsed = {}
 		if profileUrl.startswith('https://scholar.google.com/'):
 			parsed = parseScholarPage(profileUrl)
@@ -219,7 +220,10 @@ def main():
 
 		# only add profiles with at least 1 article
 		if len(parsed['urls']) == 0:
+			print(f'SKIPPED {researcher["fullName"]}')
 			continue
+
+		print(f'parsing {researcher["fullName"]}')
 
 		fullProfile = {}
 		fullProfile['fullName'] = researcher['fullName']

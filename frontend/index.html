@@ -36,32 +36,32 @@
 				}
 
 				let interestsAccordionItem = `
-						<div class="accordion-item">
-							<button class="btn btn-primary accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#i${index}" aria-expanded="true" aria-controls="i${index}">
-								Interest tags (${user.interestTags.length})
-							</button>
-							<div id="i${index}" class="accordion-collapse collapse" data-bs-parent="#nestedAccordions${index}">
-								<div class="accordion-body">
-									<ul class="list-group list-group-flush">
-										${user.interestTags.map(tag => '<li class="list-group-item">' + tag + '</li>').join('')}
-									</ul>
-								</div>
+					<div class="accordion-item">
+						<button class="btn btn-primary accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#i${index}" aria-expanded="true" aria-controls="i${index}">
+							Interest tags (${user.interestTags.length})
+						</button>
+						<div id="i${index}" class="accordion-collapse collapse" data-bs-parent="#nestedAccordions${index}">
+							<div class="accordion-body">
+								<ul class="list-group list-group-flush">
+									${user.interestTags.map(tag => '<li class="list-group-item">' + tag + '</li>').join('')}
+								</ul>
 							</div>
 						</div>
+					</div>
 				`;
 				let articleAccordionItem = `
-						<div class="accordion-item">
-							<button class="btn btn-primary accordion-button collapsed position-relative" type="button" data-bs-toggle="collapse" data-bs-target="#a${index}" aria-expanded="true" aria-controls="a${index}">
-								Articles (${user.articles.length})
-							</button>
-							<div id="a${index}" class="accordion-collapse collapse" data-bs-parent="#nestedAccordions${index}">
-								<div class="accordion-body">
-									<ul class="list-group list-group-flush">
-										${user.articles.map(tmpArticle => '<li class="list-group-item">' + listArticle(tmpArticle) + '</li>').join('')}
-									</ul>
-								</div>
+					<div class="accordion-item">
+						<button class="btn btn-primary accordion-button collapsed position-relative" type="button" data-bs-toggle="collapse" data-bs-target="#a${index}" aria-expanded="true" aria-controls="a${index}">
+							Articles (${user.articles.length})
+						</button>
+						<div id="a${index}" class="accordion-collapse collapse" data-bs-parent="#nestedAccordions${index}">
+							<div class="accordion-body">
+								<ul class="list-group list-group-flush">
+									${user.articles.map(tmpArticle => '<li class="list-group-item">' + listArticle(tmpArticle) + '</li>').join('')}
+								</ul>
 							</div>
 						</div>
+					</div>
 				`;
 				let userAccordionItem = `
 					<div class="accordion-item ${facility}">
@@ -126,8 +126,6 @@
 		}
 
 		function updateDisplayedItems(checkbox) {
-			console.log(`Checkbox ${checkbox.value} is ${checkbox.checked ? 'checked' : 'unchecked'}`);
-
 			// Get all checked checkboxes
 			const checkedCheckboxes = document.querySelectorAll('.form-check-input:checked');
 			
@@ -141,7 +139,9 @@
 
 			// Hide all userAccordionItems first
 			document.querySelectorAll('.accordion-item').forEach(item => {
-				item.style.display = 'none';
+				if (item.classList.length > 1) {
+					item.style.display = 'none';
+				}
 			});
 
 			// Determine which items to show based on checked checkboxes

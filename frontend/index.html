@@ -57,7 +57,16 @@
 						<div id="a${index}" class="accordion-collapse collapse" data-bs-parent="#nestedAccordions${index}">
 							<div class="accordion-body">
 								<ul class="list-group list-group-flush">
-									${user.articles.map(tmpArticle => '<li class="list-group-item">' + listArticle(tmpArticle) + '</li>').join('')}
+									${
+										user.articles
+										.sort((a, b) => {
+											if (a.year == null) { return 1; }
+											if (b.year == null) { return -1; }
+
+											return b.year - a.year;
+										})
+										.map(tmpArticle => '<li class="list-group-item">' + listArticle(tmpArticle) + '</li>').join('')
+									}
 								</ul>
 							</div>
 						</div>
@@ -73,7 +82,7 @@
 								<div class="accordion" id="nestedAccordions${index}">
 									<ul class="list-group list-group-flush">
 										<li class="list-group-item">Researcher at <strong>${facility}</strong></li>
-										<li class="list-group-item"><a href="${user.profileUrl}" class="link-info">Full profile</a></li>
+										<li class="list-group-item"><a href="${user.profileUrl}" class="link-info" target="blank">Full profile</a></li>
 										<li class="list-group-item">${interestsAccordionItem}</li>
 										<li class="list-group-item">${articleAccordionItem}</li>
 									</ul>
